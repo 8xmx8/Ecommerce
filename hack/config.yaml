@@ -6,3 +6,10 @@ gfcli:
     build: "-a amd64 -s linux -p temp -ew"
     tagPrefixes:
       - my.image.pub/my-app
+
+  # dao生成
+  gen:
+    dao: #todo 换成你自己的密码
+      - link: "mysql:root:root@tcp(127.0.0.1:3306)/shop"
+        descriptionTag: true
+        noModelComment: true
