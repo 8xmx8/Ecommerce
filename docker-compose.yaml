@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  shop:
+    container_name: shop-service
+    image: 'shop:latest'
+    privileged: true
+    restart: always
+    network_mode: host
